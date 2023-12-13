@@ -1,0 +1,19 @@
+.language-selector {
+    text-align: right;
+}
+
+.language-selector a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.language-selector img {
+    width: 30px;
+    margin: 10px 10px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.language-selector img:hover {
+    transform: scale(1.3);
+}

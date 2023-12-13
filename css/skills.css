@@ -1,0 +1,131 @@
+#skills {
+    margin-top: 10rem;
+    color: #111111;
+}
+
+.skills-title {
+    margin-bottom: 1rem;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.skills-cs-title, .tools-title, .skills-no-cs-title {
+    margin: 3rem auto 0 auto;
+    padding: 1rem;
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.bi.bi-screwdriver, .bi.bi-code-square, .bi.bi-gear, .bi.bi-collection {
+    display: inline-block;
+    height: 3rem;
+    vertical-align: -0.7rem;
+}
+
+.skill-category-title {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.skills-cs {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.skill-category {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    background-color: #FFF;
+    border-radius: 1.25rem;
+    font-size: 22px;
+}
+
+.skill-details, .tools-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+figure {
+    text-align: center;
+}
+
+.skills-cs .skill-details figure {
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 80%, 0.25);
+    padding: 1rem;
+    background-color: #FFF;
+    border-radius: 1.25rem;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+}
+
+.skill-items, .skill-attachement {
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 80%, 0.25);
+    display: flex;
+    padding: 1rem;
+    background-color: #FFF;
+    border-radius: 1.25rem;
+    text-align: center;
+}
+
+.skill-items p {
+    margin: 1rem;
+}
+
+.tools-used {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tools-used .tools-details, .skills-no-cs .skill-details {
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    max-width: 1000px;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    background-color: #FFF;
+    border-radius: 1.25rem;
+}
+
+.skills-no-cs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .skills-title {
+        font-size: 30px;
+    }
+
+    .skills-cs-title, .tools-title, .skills-no-cs-title {
+        font-size: 28px;
+    }
+
+    .bi.bi-code-square, .bi.bi-gear, .bi.bi-collection {
+        vertical-align: -0.8rem;
+    }
+}

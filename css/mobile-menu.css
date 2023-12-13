@@ -1,0 +1,93 @@
+:root {
+    --menu: #FF8C00;
+    --menu-bg: #ECEFF1;
+}
+
+/* Hamburger menu lines */
+
+#menu-toggle {
+    position: absolute;
+    top: 30px;
+    right: 23px;
+    opacity: 0;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#menu-toggle:checked + .button-menu > span {
+    transform: rotate(45deg);
+}
+  
+#menu-toggle:checked + .button-menu > span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu-toggle:checked + .button-menu > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu-toggle:checked ~ .menu {
+    right: 0;
+}
+
+/* Hamburger menu */
+
+.button-menu {
+    display: none;
+    position: fixed;
+    top: 42px;
+    right: 26px;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.button-menu > span, .button-menu > span::before, .button-menu > span::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition-duration: 0.25s;
+    background-color: var(--menu);
+}
+
+.button-menu > span::before {
+    content: '';
+    top: -8px;
+}
+
+.button-menu > span::after {
+    content: '';
+    top: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .button-menu {
+        display: block;
+        z-index: 10;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        right: -100%;
+        max-width: 300px;
+        height: 100%;
+        padding: 5rem 0;
+        transition-duration: 0.25s;
+        background-color: var(--menu-bg);
+        list-style: none;
+    }
+
+    li {
+        width: 50vw;
+        padding-top: 0.6rem;
+        padding-bottom: 1.2rem;
+        font-size: 20px;
+        color: #111111;
+    }
+}

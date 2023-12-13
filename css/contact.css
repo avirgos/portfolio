@@ -1,0 +1,119 @@
+:root {
+    --mail: #337AB7;
+    --house: #FF5500;
+    --pdf: #FF0000;
+    --github: #303030;
+    --linkedin: #0077B5;
+}
+
+.home-title {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 32px;
+    font-weight: normal;
+    color: #111111;
+    text-align: center;
+}
+
+address {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+address a, address p {
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.button-contact {
+    margin: 1rem;
+    padding: 1rem;
+    transition-duration: 0.4s;
+    border-radius: 0.375rem;
+    color: #111111;
+}
+
+#button-mail {
+    border: 2px solid var(--mail);
+}
+
+#button-mail:hover {
+    background-color: var(--mail);
+    color: #FFF;
+}
+
+#button-house {
+    border: 2px solid var(--house);
+}
+
+#button-house:hover {
+    background-color: var(--house);
+    color: #FFF;
+}
+
+#button-pdf {
+    border: 2px solid var(--pdf);
+}
+
+#button-pdf:hover {
+    background-color: var(--pdf);
+    color: #FFF;
+}
+
+#button-github {
+    border: 2px solid var(--github);
+}
+
+#button-github:hover {
+    background-color: var(--github);
+    color: #FFF;
+}
+
+#button-linkedin {
+    border: 2px solid var(--linkedin);
+}
+
+#button-linkedin:hover {
+    background-color: var(--linkedin);
+    color: #FFF;
+}
+
+a svg, p svg, a img {
+    vertical-align: bottom;
+}
+
+.button-back-to-contact-container {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.button-back-to-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0.75rem;
+    transition-duration: 0.4s;
+    border: 2px solid #111111;
+    border-radius: 1.25rem;
+    font-size: 22px;
+    color: #111111;
+    text-decoration: none;
+}
+
+.button-back-to-contact:hover {
+    background-color: #111111;
+    color: #FFF;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-title {
+        font-size: 28px;
+    }
+}
