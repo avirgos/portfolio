@@ -32,15 +32,13 @@ header {
     font-weight: normal;
 }
 
-.main-title a,
-.project a {
+.main-title a {
     position: relative;
     color: inherit;
     text-decoration: none;
 }
 
-.main-title a::before,
-.project a::before {
+.main-title a::before {
     transform-origin: right;
     content: '';
     position: absolute;
@@ -54,8 +52,7 @@ header {
     border-radius: 0.25rem;
 }
 
-.main-title a:hover::before,
-.project a:hover::before {
+.main-title a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
