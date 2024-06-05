@@ -49,6 +49,7 @@
 }
 
 .project-title {
+    max-height: 70px;
     display: flex;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -74,6 +75,7 @@
 }
 
 .project-explanations {
+    max-height: 20px;
     padding-right: 1rem;
     padding-left: 1rem;
     font-size: 16px;
@@ -82,7 +84,8 @@
 .tags {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .tags img {
