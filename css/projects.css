@@ -1,6 +1,7 @@
 :root {
     --website-resume: #E34C26;
     --password-generator: #8DE15A;
+    --vulndrake: #777BB4;
     --hover-animation-title: #FF8C00;
 }
 
@@ -53,7 +54,7 @@
     display: flex;
     padding-right: 1rem;
     padding-left: 1rem;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .project-title .language-color {
@@ -72,6 +73,10 @@
 
 #password-generator-language-color {
     background-color: var(--password-generator);
+}
+
+#vulndrake-language-color {
+    background-color: var(--vulndrake);
 }
 
 .project-explanations {
