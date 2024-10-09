@@ -1,5 +1,5 @@
-# website-resume
+# portfolio
 
-Static and responsive personal website.
+My static and responsive website.
 
 https://antoine.virgos.fr
