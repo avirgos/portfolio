@@ -1,5 +1,5 @@
 :root {
-    --website-resume: #E34C26;
+    --portfolio: #E34C26;
     --password-generator: #8DE15A;
     --vulndrake: #777BB4;
     --hover-animation-title: #FF8C00;
@@ -67,8 +67,8 @@
     border-radius: 50%;
 }
 
-#website-resume-language-color {
-    background-color: var(--website-resume);
+#portfolio-language-color {
+    background-color: var(--portfolio);
 }
 
 #password-generator-language-color {
