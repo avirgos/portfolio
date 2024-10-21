@@ -19,13 +19,24 @@
     text-align: center;
 }
 
+.tools div h4 {
+    max-width:fit-content;
+    padding: 1rem;
+    background-color: #FFF;
+    border-radius: 1.25rem;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 3rem;
+    text-align: center;
+}
+
 .bi.bi-screwdriver, .bi.bi-code-square, .bi.bi-gear, .bi.bi-collection {
     display: inline-block;
     height: 3rem;
     vertical-align: -0.7rem;
 }
 
-.computer-security-details, .languages-details, .tools-details, .skill-details {
+.computer-security-details, .languages-details, .tools .tools-category .tools-items, .skill-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,10 +75,10 @@ figcaption {
     margin-left: auto;
 }
 
-.computer-security .computer-security-details, .languages .languages-details, .tools .tools-details, .skills-no-cs .skill-details {
+.computer-security .computer-security-details, .languages .languages-details, .tools .tools-category .tools-items, .skills-no-cs .skill-details {
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     max-width: 1000px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 3rem;
     padding: 1rem;
     background-color: #FFF;

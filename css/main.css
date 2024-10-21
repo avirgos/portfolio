@@ -34,29 +34,29 @@ header {
 
 .main-title a {
     position: relative;
+    overflow: hidden;
     color: inherit;
     text-decoration: none;
 }
 
 .main-title a::before {
-    transform-origin: right;
+    transform-origin: left;
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
-    transform: scaleX(0);
+    transform: scaleX(0); /* Démarre invisible */;
     width: 100%;
-    height: 0.01rem;
-    transition: transform 0.3s ease-in-out;
+    height: 1px; /* Épaisseur fixe */;
+    transition: transform 0.3s ease-in-out; /* Seul scaleX est animé */;
     background-color: var(--hover-animation-title);
-    border-radius: 0.25rem;
 }
 
 .main-title a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
+    transform: scaleX(1); /* Animation d'élargissement sur l'axe X */;
 }
 
+/* Menu styling */
 .menu ul {
     list-style: none;
 }
@@ -80,7 +80,7 @@ header {
 }
 
 footer {
-    display : table-row-group;
+    display: table-row-group;
     background-color: var(--header-footer);
     text-align: center;
 }
